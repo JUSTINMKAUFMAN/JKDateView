@@ -1,4 +1,4 @@
-<img src="https://github.com/JUSTINMKAUFMAN/JKDateView/raw/master/JKDateView/Assets.xcassets/Icon-App-40x40@1x.png" alt="JKDateView Logo" width="36" height="36"> JKDateView: Date Reveal Concept for iOS
+<img src="https://github.com/JUSTINMKAUFMAN/JKDateView/blob/master/JKDateView/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40%401x.png" alt="JKDateView Logo" width="36" height="36"> JKDateView: Date Reveal Concept for iOS
 ======================================
 
 ![platforms](https://img.shields.io/badge/platforms-iOS-1111111.svg)
