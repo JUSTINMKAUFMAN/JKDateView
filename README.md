@@ -9,4 +9,8 @@ JKDateView demonstrates a date reveal feature concept as one way of addressing t
 
 The concept is simple: tapping the time in the top-left corner of the screen briefly shows the date in the unused space beneath the clock.
 
-_Note: This demonstration is only visual (i.e. it does not actually implement any modifications to iOS on a system level)._
+<p align="center">
+    <img src="/JKDateView.gif" />
+</p>
+
+_*Note:* This demonstration is only visual (i.e. it does not actually implement any modifications to iOS on a system level)._
