@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController extendedLayoutIncludesOpaqueBars="YES" hidesBottomBarWhenPushed="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="JKDateView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="HFM-S9-pwR">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="February 25, 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59o-DQ-paK" userLabel="DateLabel">
+                                <rect key="frame" x="40" y="22" width="138.66666666666666" height="19.333333333333329"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19.329999999999998" id="Igu-Oo-IFr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRu-0e-0Ds" userLabel="TimeButton">
+                                <rect key="frame" x="40" y="7" width="36" height="32"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <color key="tintColor" red="0.33428901433944702" green="0.43757551908493042" blue="0.52943408489227295" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="8:29">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapTime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Tj-C9-Dxu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qRu-0e-0Ds" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="7" id="50b-A8-pt4"/>
+                            <constraint firstAttribute="bottom" secondItem="HFM-S9-pwR" secondAttribute="bottom" id="FwU-iE-sl6"/>
+                            <constraint firstItem="qRu-0e-0Ds" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="GQK-kf-jmv"/>
+                            <constraint firstItem="59o-DQ-paK" firstAttribute="leading" secondItem="IxX-N0-WYW" secondAttribute="leading" constant="40" id="Iqj-U8-NYw"/>
+                            <constraint firstItem="HFM-S9-pwR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LWp-3M-uu4"/>
+                            <constraint firstItem="59o-DQ-paK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="22" id="OKq-Lj-tFy"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qRu-0e-0Ds" secondAttribute="trailing" constant="10" id="bPv-lh-U0w"/>
+                            <constraint firstAttribute="trailing" secondItem="HFM-S9-pwR" secondAttribute="trailing" id="fL0-DG-xJP"/>
+                            <constraint firstItem="HFM-S9-pwR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fXG-ip-ifA"/>
+                            <constraint firstItem="IxX-N0-WYW" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="59o-DQ-paK" secondAttribute="trailing" constant="10" id="giM-3x-gFJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IxX-N0-WYW"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="59o-DQ-paK" id="tow-RK-o1r"/>
+                        <outlet property="dateLabelTopConstraint" destination="OKq-Lj-tFy" id="Lvm-Qc-F7Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="1242" height="2688"/>
+    </resources>
+</document>
